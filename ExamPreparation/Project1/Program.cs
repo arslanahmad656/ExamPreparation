@@ -11,7 +11,8 @@ namespace Project1
         static void Main(string[] args)
         {
             //ThreadBasics.TheadBasics.Run();
-            ThreadBasics.TheadLocalData.Run();
+            //ThreadBasics.TheadLocalData.Run();
+            ThreadBasics.ThreadLocals.Run();
 
             //Pause();
         }

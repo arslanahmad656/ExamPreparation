@@ -10,6 +10,16 @@ namespace Project1
     {
         static void Main(string[] args)
         {
+            //ThreadBasics.TheadBasics.Run();
+            ThreadBasics.TheadLocalData.Run();
+
+            //Pause();
+        }
+
+        static void Pause()
+        {
+            Console.WriteLine("End of main reached. Press any key to continue...");
+            Console.ReadKey();
         }
     }
 }

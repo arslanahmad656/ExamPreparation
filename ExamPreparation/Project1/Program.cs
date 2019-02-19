@@ -15,7 +15,8 @@ namespace Project1
             //ThreadBasics.ThreadLocals.Run();
             //Tasks.TasksBasics.Run();
             //Tasks.TasksReturningValue.Run();
-            Tasks.Continuations.Run();
+            //Tasks.Continuations.Run();
+            Tasks.TaskFactories.Run();
 
             //Pause();
         }

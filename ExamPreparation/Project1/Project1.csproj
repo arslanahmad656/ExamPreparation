@@ -50,6 +50,7 @@
     <Compile Include="Tasks\TaskFactories.cs" />
     <Compile Include="Tasks\TasksBasics.cs" />
     <Compile Include="Tasks\TasksReturningValue.cs" />
+    <Compile Include="Tasks\Waits.cs" />
     <Compile Include="ThreadBasics\TheadBasics.cs" />
     <Compile Include="ThreadBasics\TheadLocalData.cs" />
     <Compile Include="ThreadBasics\ThreadLocals.cs" />

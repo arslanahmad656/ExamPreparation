@@ -12,14 +12,17 @@ namespace Project1
         {
             //ThreadBasics.TheadBasics.Run();
             //ThreadBasics.TheadLocalData.Run();
-            ThreadBasics.ThreadLocals.Run();
+            //ThreadBasics.ThreadLocals.Run();
+            //Tasks.TasksBasics.Run();
+            //Tasks.TasksReturningValue.Run();
+            Tasks.Continuations.Run();
 
             //Pause();
         }
 
         static void Pause()
         {
-            Console.WriteLine("End of main reached. Press any key to continue...");
+            Console.Write("\r\n\r\nEnd of main reached. Press any key to continue...");
             Console.ReadKey();
         }
     }

@@ -22,7 +22,8 @@ namespace Project1
             //Asyncs.AsyncBasics.Run();
             //Tasks.Waits.Run();
             //SynchronizationContexts.Example1.Run();
-            PLINQs.Basics.Run();
+            //PLINQs.Basics.Run();
+            ConcurrentCollections.Example1.Run();
 
 
             //Pause();

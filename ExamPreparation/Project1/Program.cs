@@ -17,7 +17,8 @@ namespace Project1
             //Tasks.TasksReturningValue.Run();
             //Tasks.Continuations.Run();
             //Tasks.TaskFactories.Run();
-            Tasks.Waits.Run();
+            //Tasks.Waits.Run();
+            Asyncs.AsyncBasics.Run();
 
             //Pause();
         }

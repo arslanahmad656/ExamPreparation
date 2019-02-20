@@ -19,9 +19,11 @@ namespace Project1
             //Tasks.Continuations.Run();
             //Tasks.TaskFactories.Run();
             //Tasks.Waits.Run();
-            Asyncs.AsyncBasics.Run();
+            //Asyncs.AsyncBasics.Run();
             //Tasks.Waits.Run();
-            SynchronizationContexts.Example1.Run();
+            //SynchronizationContexts.Example1.Run();
+            PLINQs.Basics.Run();
+
 
             //Pause();
         }

@@ -6,11 +6,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
-using System.Windows;
-using System.Xaml;
-using WpfApp1;
-using FormsApplication = System.Windows.Forms.Application;
-using WpfApplication = System.Windows.Application;
+using System.IO;
+using System.Diagnostics;
 
 namespace Project1.SynchronizationContexts
 {
@@ -18,16 +15,23 @@ namespace Project1.SynchronizationContexts
     {
         public static void Run()
         {
-            FormsApplication.EnableVisualStyles();
+            Application.EnableVisualStyles();
             //DemoStartForm();
             //Demo1();
-            Demo2();
+            DemoWpfSynchronizationContext();
         }
 
-        static void Demo2()
+        static void DemoWpfSynchronizationContext()
         {
-            var app = new WpfApplication();
-            app.Run(new MainWindow());
+            var path = Path.Combine(Environment.CurrentDirectory, "WpfApp1");
+            var file = $@"{path}\WpfApp1.exe";
+            if (!File.Exists(file))
+            {
+                MessageBox.Show($"File {file} does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            var proc = Process.Start(file);
+            proc.WaitForExit();
         }
 
         static void Demo1()

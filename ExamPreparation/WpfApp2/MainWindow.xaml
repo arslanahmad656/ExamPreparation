@@ -1,0 +1,65 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600" ResizeMode="CanResize">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="400"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="10 5"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel Margin="15">
+        <WrapPanel HorizontalAlignment="Stretch">
+            <TextBlock>All items:</TextBlock>
+            <TextBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" IsReadOnly="True" x:Name="txtBox_All" TextWrapping="WrapWithOverflow" AcceptsReturn="True" Height="200"></TextBox>
+        </WrapPanel>
+
+        <WrapPanel>
+            <TextBlock>Current Item:</TextBlock>
+            <TextBox IsReadOnly="True" x:Name="txtBox_Current"></TextBox>
+        </WrapPanel>
+
+        <WrapPanel>
+            <TextBlock>Add Item:</TextBlock>
+            <TextBox x:Name="txtBox_Add"></TextBox>
+        </WrapPanel>
+
+        <WrapPanel HorizontalAlignment="Center">
+            <Button x:Name="btn_Fill">Fill Collection</Button>
+            <Button x:Name="btn_Read">Start Reading</Button>
+            <Button x:Name="btn_AppendSingle">Append Single</Button>
+            <Button x:Name="btn_AppendBulk">Start Append</Button>
+            <Button x:Name="btn_ClearText">Clear Text</Button>
+        </WrapPanel>
+
+        <WrapPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label VerticalAlignment="Center">Add Speed (ms)</Label>
+                <TextBox Width="120" x:Name="txtBox_AddSpeed">100</TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label VerticalAlignment="Center">Remove (ms)</Label>
+                <TextBox Width="120" x:Name="txtBox_RemoveSpeed">100</TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btn_AdjustSpeed">Adjust Speed</Button>
+            </StackPanel>
+        </WrapPanel>
+    </StackPanel>
+</Window>

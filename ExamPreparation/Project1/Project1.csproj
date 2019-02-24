@@ -55,6 +55,7 @@
     </Compile>
     <Compile Include="Asyncs\AsyncBasics.cs" />
     <Compile Include="ConcurrentCollections\Example1.cs" />
+    <Compile Include="Miscs\Miscs.cs" />
     <Compile Include="PLINQs\Basics.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

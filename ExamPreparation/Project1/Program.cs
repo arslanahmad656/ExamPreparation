@@ -23,7 +23,8 @@ namespace Project1
             //Tasks.Waits.Run();
             //SynchronizationContexts.Example1.Run();
             //PLINQs.Basics.Run();
-            ConcurrentCollections.Example1.Run();
+            //ConcurrentCollections.Example1.Run();
+            Miscs.Miscs.Run();
 
 
             //Pause();

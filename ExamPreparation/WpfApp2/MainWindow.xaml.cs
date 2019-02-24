@@ -85,21 +85,16 @@ namespace WpfApp2
         {
             Task.Run(() =>
             {
-                //var buffer = new List<string>();
-                //int i = 0;
-                while (true)
+                //while (true)
+                //{
+                //    var s = _collection.Take();
+                //    System.Threading.Thread.Sleep(_popSpeed);
+                //    Dispatcher.Invoke(() => txtBox_All.Text += "  " + s);
+                //}
+                foreach (var item in _collection.GetConsumingEnumerable())
                 {
-                    var s = _collection.Take();
                     System.Threading.Thread.Sleep(_popSpeed);
-                    Dispatcher.Invoke(() => txtBox_All.Text += "  " + s);
-                    //buffer.Add(s);
-                    //i++;
-                    //if (i == 100)
-                    //{
-                    //    var joinedStr = string.Join("  ", buffer);
-                    //    buffer.Clear();
-                    //    Dispatcher.Invoke(() => txtBox_All.Text += "  " + joinedStr);
-                    //}
+                    Dispatcher.Invoke(() => txtBox_All.Text += "  " + item);
                 }
             });
         }

@@ -10,6 +10,7 @@ namespace Project2
     {
         static void Main(string[] args)
         {
+            Events.Events1.Run();
         }
     }
 }

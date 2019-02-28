@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1.AlarmClock
 {
-    class AlarmClock
+    public class AlarmClock
     {
         private static int _interval;
         private object _lock = new object();
@@ -33,8 +33,11 @@ namespace ClassLibrary1.AlarmClock
             {
                 _clockRunner = new Task(() =>
                 {
-                    OnAlarmRaised?.Invoke();
-                    Thread.Sleep(Interval);
+                    while (!_cancellationToken.IsCancellationRequested)
+                    {
+                        OnAlarmRaised?.Invoke();
+                        Thread.Sleep(Interval);
+                    }
                 }, _cancellationToken.Token);
             }
 

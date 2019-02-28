@@ -69,6 +69,7 @@
     <Compile Include="ThreadBasics\TheadBasics.cs" />
     <Compile Include="ThreadBasics\TheadLocalData.cs" />
     <Compile Include="ThreadBasics\ThreadLocals.cs" />
+    <Compile Include="ThreadSafetyIssues\DemoNotSafe.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -77,6 +78,12 @@
     <EmbeddedResource Include="Common\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
+      <Project>{e60b3d26-f80b-404f-ba98-f2b18cf4524d}</Project>
+      <Name>ClassLibrary1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

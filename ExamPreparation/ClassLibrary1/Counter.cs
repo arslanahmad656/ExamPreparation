@@ -12,7 +12,13 @@ namespace ClassLibrary1
 
         public Counter() => sum = 0;
 
-        public void Add(int count) => sum += count;
+        public void Add(int count)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                sum = sum + 1;
+            }
+        }
 
         public int GetSum() => sum;
     }

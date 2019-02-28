@@ -26,7 +26,7 @@ namespace Project1
             //ConcurrentCollections.Example1.Run();
             //Miscs.Miscs.Run();
             //TaskCancellation.TaskCancellation.Run();
-            ThreadSafetyIssues.DemoNotSafe.Run();
+            ThreadSafetyIssues.SafetyIssueGlimpse.Run();
 
 
             //Pause();

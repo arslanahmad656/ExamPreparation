@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    public class Counter
+    public class CounterThreadSafe
     {
         private int sum;
 
-        public Counter() => sum = 0;
+        public CounterThreadSafe() => sum = 0;
 
-        public void Add(int count) => sum += count;
+        public void Add(int count) => Interlocked.Add(ref sum, count);
 
         public int GetSum() => sum;
     }

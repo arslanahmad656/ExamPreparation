@@ -60,6 +60,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SynchronizationContexts\Example1.cs" />
+    <Compile Include="TaskCancellation\TaskCancellation.cs" />
     <Compile Include="Tasks\Continuations.cs" />
     <Compile Include="Tasks\TaskFactories.cs" />
     <Compile Include="Tasks\TasksBasics.cs" />

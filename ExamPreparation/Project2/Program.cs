@@ -10,7 +10,9 @@ namespace Project2
     {
         static void Main(string[] args)
         {
-            Events.Events1.Run();
+            //Events.Events1.Run();
+            //DeadLock.DeadlockExample.Run();
+            Events.Events2.Run();
         }
     }
 }

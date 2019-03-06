@@ -42,7 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeadLock\DeadlockExample.cs" />
+    <Compile Include="Events\Account\Account.cs" />
+    <Compile Include="Events\Account\AccountEventArgs.cs" />
     <Compile Include="Events\Events1.cs" />
+    <Compile Include="Events\Events2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

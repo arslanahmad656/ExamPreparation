@@ -43,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoxingAndUnBoxing\Example1.cs" />
+    <Compile Include="Conversions\DistanceMetric.cs" />
+    <Compile Include="Conversions\DistanceSI.cs" />
+    <Compile Include="Conversions\Example1.cs" />
     <Compile Include="Indexers\Demo.cs" />
     <Compile Include="Indexers\IndexedCollection.cs" />
     <Compile Include="Program.cs" />

@@ -47,6 +47,8 @@
     <Compile Include="Events\Account\AccountEventArgs.cs" />
     <Compile Include="Events\Events1.cs" />
     <Compile Include="Events\Events2.cs" />
+    <Compile Include="Events\Events3.cs" />
+    <Compile Include="Events\Events4.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

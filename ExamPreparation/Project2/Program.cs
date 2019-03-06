@@ -12,7 +12,9 @@ namespace Project2
         {
             //Events.Events1.Run();
             //DeadLock.DeadlockExample.Run();
-            Events.Events2.Run();
+            //Events.Events2.Run();
+            //Events.Events3.Run();
+            Events.Events4.Run();
         }
     }
 }

@@ -47,6 +47,13 @@
     <Compile Include="Conversions\DistanceMetric.cs" />
     <Compile Include="Conversions\DistanceSI.cs" />
     <Compile Include="Conversions\Example1.cs" />
+    <Compile Include="Dynamic\Example1.cs" />
+    <Compile Include="Dynamic\Example2.cs" />
+    <Compile Include="Dynamic\SomeClass.cs" />
+    <Compile Include="ExplicitInterfaces\Example.cs" />
+    <Compile Include="ExplicitInterfaces\IDisplayable.cs" />
+    <Compile Include="ExplicitInterfaces\IPrintable.cs" />
+    <Compile Include="ExplicitInterfaces\Person.cs" />
     <Compile Include="Indexers\Demo.cs" />
     <Compile Include="Indexers\IndexedCollection.cs" />
     <Compile Include="Program.cs" />
@@ -55,5 +62,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

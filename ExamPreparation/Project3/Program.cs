@@ -12,7 +12,10 @@ namespace Project3
         {
             //Indexers.Demo.Run();
             //BoxingAndUnBoxing.Example1.Run();
-            Conversions.Example1.Run();
+            //Conversions.Example1.Run();
+            //Dynamic.Example1.Run();
+            Dynamic.Example2.Run();
+            //ExplicitInterfaces.Example.Run();
         }
     }
 }

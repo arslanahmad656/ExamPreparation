@@ -24,7 +24,9 @@ namespace Project1
             //SynchronizationContexts.Example1.Run();
             //PLINQs.Basics.Run();
             //ConcurrentCollections.Example1.Run();
-            Miscs.Miscs.Run();
+            //Miscs.Miscs.Run();
+            //TaskCancellation.TaskCancellation.Run();
+            ThreadSafetyIssues.SafetyIssueGlimpse.Run();
 
 
             //Pause();

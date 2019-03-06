@@ -22,6 +22,17 @@ namespace Project3.Dynamic
 
             Console.WriteLine(obj.Name);
             Console.WriteLine(obj.Title);
+
+            ((IDictionary<string, object>)obj).Remove("Title");
+
+            try
+            {
+                Console.WriteLine(obj.Title);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Member removed");
+            }
         }
     }
 }

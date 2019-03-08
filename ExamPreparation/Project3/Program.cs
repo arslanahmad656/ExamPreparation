@@ -14,8 +14,11 @@ namespace Project3
             //BoxingAndUnBoxing.Example1.Run();
             //Conversions.Example1.Run();
             //Dynamic.Example1.Run();
-            Dynamic.Example2.Run();
+            //Dynamic.Example2.Run();
             //ExplicitInterfaces.Example.Run();
+            //Enumerating.Example1.Run();
+            //Enumerating.Example2.Run();
+            Enumerating.Example3.Run();
         }
     }
 }

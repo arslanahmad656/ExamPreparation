@@ -50,6 +50,14 @@
     <Compile Include="Dynamic\Example1.cs" />
     <Compile Include="Dynamic\Example2.cs" />
     <Compile Include="Dynamic\SomeClass.cs" />
+    <Compile Include="Enumerating\Enumerator1\EnumerablePersons.cs" />
+    <Compile Include="Enumerating\Enumerator1\PersonEnumerator.cs" />
+    <Compile Include="Enumerating\Enumerator2\EnumerablePersons.cs" />
+    <Compile Include="Enumerating\Enumerator3\EnumerablePersons.cs" />
+    <Compile Include="Enumerating\Example3.cs" />
+    <Compile Include="Enumerating\Person.cs" />
+    <Compile Include="Enumerating\Example1.cs" />
+    <Compile Include="Enumerating\Example2.cs" />
     <Compile Include="ExplicitInterfaces\Example.cs" />
     <Compile Include="ExplicitInterfaces\IDisplayable.cs" />
     <Compile Include="ExplicitInterfaces\IPrintable.cs" />

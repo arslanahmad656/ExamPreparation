@@ -54,7 +54,9 @@
     <Compile Include="Enumerating\Enumerator1\PersonEnumerator.cs" />
     <Compile Include="Enumerating\Enumerator2\EnumerablePersons.cs" />
     <Compile Include="Enumerating\Enumerator3\EnumerablePersons.cs" />
+    <Compile Include="Enumerating\Enumerator4\EnumerablePersons.cs" />
     <Compile Include="Enumerating\Example3.cs" />
+    <Compile Include="Enumerating\Example4.cs" />
     <Compile Include="Enumerating\Person.cs" />
     <Compile Include="Enumerating\Example1.cs" />
     <Compile Include="Enumerating\Example2.cs" />

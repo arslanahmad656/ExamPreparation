@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project3.Enumerating.Enumerator3
+namespace Project3.Enumerating.Enumerator4
 {
     class EnumerablePersons : IEnumerable<Person>
     {
@@ -21,8 +21,14 @@ namespace Project3.Enumerating.Enumerator3
             };
         }
 
-        IEnumerator<Person> IEnumerable<Person>.GetEnumerator() => ((IEnumerable<Person>)persons).GetEnumerator();  // using the IEnumerator of inner collection
+        public IEnumerator<Person> GetEnumerator()
+        {
+            foreach (var person in persons)
+            {
+                yield return person;
+            }
+        }
 
-        IEnumerator IEnumerable.GetEnumerator() => persons.GetEnumerator();
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     }
 }

@@ -18,7 +18,8 @@ namespace Project3
             //ExplicitInterfaces.Example.Run();
             //Enumerating.Example1.Run();
             //Enumerating.Example2.Run();
-            Enumerating.Example3.Run();
+            //Enumerating.Example3.Run();
+            Enumerating.Example4.Run();
         }
     }
 }

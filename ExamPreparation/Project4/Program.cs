@@ -10,6 +10,7 @@ namespace Project4
     {
         static void Main(string[] args)
         {
+            ConditionalCompilationUsingAttributes.Example.Run();
         }
     }
 }

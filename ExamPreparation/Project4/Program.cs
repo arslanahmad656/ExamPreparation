@@ -11,7 +11,9 @@ namespace Project4
         static void Main(string[] args)
         {
             //ConditionalCompilationUsingAttributes.Example.Run();
-            Attributes.Example1.Run();
+            //Attributes.Example1.Run();
+            //MEF.Example1.Run();
+            MEF.Example2.Run();
         }
     }
 }

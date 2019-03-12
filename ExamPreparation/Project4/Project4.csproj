@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="Attributes\Example1.cs" />
     <Compile Include="ConditionalCompilationUsingAttributes\Example.cs" />
+    <Compile Include="MEF\Example1.cs" />
+    <Compile Include="MEF\Example2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

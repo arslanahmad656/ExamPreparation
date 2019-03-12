@@ -1,0 +1,36 @@
+﻿<Window x:Class="MEFCalculatorUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MEFCalculatorUI"
+        mc:Ignorable="d"
+        Title="Calculator" Height="406" Width="473" ResizeMode="CanMinimize">
+
+    <Window.Resources>
+        <Style TargetType="ComboBox">
+            <Setter Property="Padding" Value="10 20"/>
+            <Setter Property="Margin" Value="10 7"/>
+        </Style>
+        <Style TargetType="ComboBoxItem">
+            <Setter Property="Padding" Value="10 20"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="10 20"/>
+            <Setter Property="Margin" Value="10 7"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Padding" Value="10 20"/>
+            <Setter Property="Margin" Value="10 7"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="Txt_Op1"></TextBox>
+            <TextBox x:Name="Txt_Op2"></TextBox>
+            <ComboBox x:Name="Cmb_Operation"></ComboBox>
+            <TextBox x:Name="Txt_Result" IsReadOnly="True"></TextBox>
+            <Button x:Name="Btn_Calculate">Calculate</Button>
+        </StackPanel>
+    </Grid>
+</Window>

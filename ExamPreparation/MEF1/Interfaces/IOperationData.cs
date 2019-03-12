@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace MEF1.Interfaces
 {
-    public interface ICalculator
+    public interface IOperationData
     {
-        string Calculate(string expression);
+        Char Symbol { get; }
     }
 }

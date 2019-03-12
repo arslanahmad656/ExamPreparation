@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace MEF1.Interfaces
 {
-    public interface ICalculator
+    public interface IOperation
     {
-        string Calculate(string expression);
+        int Operate(int left, int right);
     }
 }

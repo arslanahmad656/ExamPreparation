@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{645B6238-0798-4197-A457-3BEBA1E383C0}</ProjectGuid>
+    <ProjectGuid>{1953D691-2422-4DAB-8672-36ACBA577AFF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MEF1</RootNamespace>
-    <AssemblyName>MEF1</AssemblyName>
+    <RootNamespace>MEF2</RootNamespace>
+    <AssemblyName>MEF2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,17 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\ICalculator.cs" />
-    <Compile Include="Interfaces\IOperation.cs" />
-    <Compile Include="Interfaces\IOperationData.cs" />
-    <Compile Include="Parts\CalculatorOperations.cs" />
-    <Compile Include="Parts\Calculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

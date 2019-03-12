@@ -29,10 +29,6 @@ namespace MEF1.Parts
             }
 
             var op = expression[operatorIndex];
-            if (op != '+' && op != '-' && op != '*' && op !=  '/')
-            {
-                throw new FormatException("Operator not recognized");
-            }
 
             var left = int.Parse(expression.Substring(0, operatorIndex));
             var right = int.Parse(expression.Substring(operatorIndex + 1));
@@ -49,7 +45,7 @@ namespace MEF1.Parts
                 }
             }
 
-            throw new Exception("The underlying type does not support " + op + " operation");
+            return "The underlying type does not support " + op + " operation";
         }
 
         private int FindFirstNonDigit(string expression)

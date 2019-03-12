@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
+using System.IO;
 using MEF1.Interfaces;
 
 namespace MEF1
@@ -27,6 +28,14 @@ namespace MEF1
         {
             var catalog = new AggregateCatalog();   // a catalog that will discover the available exports from some source
             catalog.Catalogs.Add(new AssemblyCatalog(this.GetType().Assembly)); // specifying that the catalog should discover the exports from 'this' assembly (which is the current project)
+            var pluginPath = Path.Combine(Path.GetDirectoryName(this.GetType().Assembly.Location), "Plugins");
+            if (!Directory.Exists(pluginPath))
+            {
+                Directory.CreateDirectory("Plugins");
+            }
+            catalog.Catalogs.Add(new DirectoryCatalog(pluginPath)); // specifying that the catalog should also discover the plugins from a directory
+
+            Console.WriteLine("Plugins path is: " + pluginPath);
 
             var container = new CompositionContainer(catalog);  // create a composition container that will satisfy the imports of some object (specified below) with the exports discovered by the catalog object.
             try

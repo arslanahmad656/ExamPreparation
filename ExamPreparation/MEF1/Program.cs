@@ -13,7 +13,7 @@ namespace MEF1
     {
 #pragma warning disable CS0649  // suppress the ugly warning highlighter arising because this field will never be assigned to at compile time. This field is assigned value by the composition engine
         [Import(typeof(ICalculator))]   // Means that out of the exports made available by the catalog, ICalculator type will be used to fill in this
-        public ICalculator calculator; // this is an import that will be filled in by the composition container
+        private ICalculator calculator; // this is an import that will be filled in by the composition container
 #pragma warning restore CS0649
 
         private static Program _app;
@@ -26,7 +26,7 @@ namespace MEF1
         private Program()
         {
             var catalog = new AggregateCatalog();   // a catalog that will discover the available exports from some source
-            catalog.Catalogs.Add(new AssemblyCatalog(this.GetType()/*typeof(Program)*/.Assembly)); // specifying that the catalog should discover the exports from 'this' assembly (which is the current project)
+            catalog.Catalogs.Add(new AssemblyCatalog(this.GetType().Assembly)); // specifying that the catalog should discover the exports from 'this' assembly (which is the current project)
 
             var container = new CompositionContainer(catalog);  // create a composition container that will satisfy the imports of some object (specified below) with the exports discovered by the catalog object.
             try
@@ -43,13 +43,11 @@ namespace MEF1
 
         static void Main(string[] args)
         {
-            //Program p = new Program();
             while (true)
             {
                 Console.Write("\n\nEnter an expression: ");
                 var expression = Console.ReadLine();
                 var result = _app.calculator.Calculate(expression);  // lest the calculator import is satisfied by the composition container, this line will throw null
-                //var result = p.calculator.Calculate(expression);
 
                 Console.WriteLine(result);
             }

@@ -12,10 +12,12 @@ namespace MEF1.Parts
     [Export(typeof(ICalculator))]   // Specify that this class is an export that will be discovered by a catalog
     class Calculator : ICalculator
     {
+#pragma warning disable CS0649
         [ImportMany(typeof(IOperation))]    // The list will be populated by the composition container using a number of exports available
                         // Note that no type is supplied as argument to the attribute- the type will be determined by the composition container as IOperation.
                         // ImportMany is used because there can be more than one export available matching the import of type IOperation.
         private IEnumerable<Lazy<IOperation, IOperationData>> operations;  // Lazy<T, TMetaData> supports two properties among other ones: Value and MetaData.
+#pragma warning disable
 
         public string Calculate(string expression)
         {

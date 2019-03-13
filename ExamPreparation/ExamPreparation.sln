@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEFCalculatorUI", "MEFCalcu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEFCalculatorOperations", "MEFCalculatorOperations\MEFCalculatorOperations.csproj", "{45C40F27-5400-4E85-AC48-2EB55602A65E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project5", "Project5\Project5.csproj", "{8FC162B8-021E-42D6-940B-54C6AA32DA59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -88,6 +90,10 @@ Global
 		{45C40F27-5400-4E85-AC48-2EB55602A65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45C40F27-5400-4E85-AC48-2EB55602A65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45C40F27-5400-4E85-AC48-2EB55602A65E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FC162B8-021E-42D6-940B-54C6AA32DA59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC162B8-021E-42D6-940B-54C6AA32DA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC162B8-021E-42D6-940B-54C6AA32DA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC162B8-021E-42D6-940B-54C6AA32DA59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -50,12 +50,19 @@
     <Compile Include="Basics\Example4.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharedMemoryExamples\Example1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Missing Items.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharedMemory\SharedMemory.csproj">
+      <Project>{bfe881eb-00e9-4faa-bcfc-0762cacbc4ab}</Project>
+      <Name>SharedMemory</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

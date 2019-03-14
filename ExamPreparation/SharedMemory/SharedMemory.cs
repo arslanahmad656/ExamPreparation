@@ -15,8 +15,18 @@ namespace SharedMemory
     {
         private static readonly IntPtr _EmptyPtr;
 
-        private IntPtr fileHandle;
-        private IntPtr filePtr;
+        private IntPtr fileHandle;  // file handle
+        private IntPtr filePtr; // file map
+
+        /// <summary>
+        /// Returns the file map of the mapping
+        /// </summary>
+        public IntPtr FilePtr => filePtr;
+
+        /// <summary>
+        /// Returns the file handle
+        /// </summary>
+        public IntPtr FileHandle => fileHandle;
 
         static SharedMemory()
         {

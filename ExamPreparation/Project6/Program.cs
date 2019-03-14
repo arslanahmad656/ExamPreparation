@@ -8,8 +8,9 @@ namespace Project6
 {
     class Program
     {
-        static void Main(string[] args)
+        unsafe static void Main(string[] args)
         {
+            UnsafeBasics.Example1.Run();
         }
     }
 }

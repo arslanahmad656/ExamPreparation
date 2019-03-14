@@ -26,7 +26,7 @@ namespace SharedMemory
         /// <summary>
         /// Returns the file handle
         /// </summary>
-        public IntPtr FileHandle => fileHandle;
+        private IntPtr FileHandle => fileHandle;
 
         static SharedMemory()
         {

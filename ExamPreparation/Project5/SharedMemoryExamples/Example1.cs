@@ -25,12 +25,12 @@ namespace Project5.SharedMemoryExamples
                 using (var map2 = new SharedMemory.SharedMemory(mappingName))
                 {
                     Console.WriteLine("Created a shared memory...");
-                    Console.WriteLine($"Handle: {map1.FileHandle}");
+                    //Console.WriteLine($"Handle: {map1.FileHandle}");
                     Console.Write($"Poiter: {map1.FilePtr}");
                     Console.WriteLine();
                     
                     Console.WriteLine("Subscribed to a shared memory...");
-                    Console.WriteLine($"Handle: {map2.FileHandle}");
+                    //Console.WriteLine($"Handle: {map2.FileHandle}");
                     Console.WriteLine($"Poiter: {map2.FilePtr}");
                 }
             }

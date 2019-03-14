@@ -16,6 +16,8 @@ namespace MapCreatingApplication
         static void Main(string[] args)
         {
             Run();
+            Console.WriteLine("P1 ended. Press any key to continue...");
+            Console.ReadKey();
         }
 
         unsafe static void Run()
@@ -48,7 +50,7 @@ namespace MapCreatingApplication
                 Console.WriteLine($"P1 Char: {structPtr->CharField}");
                 Console.WriteLine($"P1 Array[0]: {structPtr->FloatArrayField[0]}");
                 Console.WriteLine($"P1 Array[1]: {structPtr->FloatArrayField[1]}");
-                Console.WriteLine($"P1 Array[2]: {structPtr->FloatArrayField[3]}");
+                Console.WriteLine($"P1 Array[2]: {structPtr->FloatArrayField[2]}");
 
             }
         }

@@ -10,7 +10,8 @@ namespace Project6
     {
         unsafe static void Main(string[] args)
         {
-            UnsafeBasics.Example1.Run();
+            //UnsafeBasics.Example1.Run();
+            MappingUnsafeStructs.Example.Run();
         }
     }
 }

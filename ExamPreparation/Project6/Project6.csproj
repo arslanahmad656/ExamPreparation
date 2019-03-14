@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MappingUnsafeStructs\Example.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnsafeBasics\Example1.cs" />
@@ -50,6 +51,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MapCreatingApplication\MapCreatingApplication.csproj">
+      <Project>{0beaf1a1-b07f-4614-89c3-376315388c88}</Project>
+      <Name>MapCreatingApplication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MapReadingApplication\MapReadingApplication.csproj">
+      <Project>{de47c226-a34f-426c-9c0c-500206cb8698}</Project>
+      <Name>MapReadingApplication</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

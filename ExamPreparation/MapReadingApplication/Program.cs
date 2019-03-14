@@ -14,6 +14,8 @@ namespace MapReadingApplication
         static void Main(string[] args)
         {
             Run();
+            Console.WriteLine("P2 ended. Press any key to continue...");
+            Console.ReadKey();
         }
 
         unsafe static void Run()
@@ -39,6 +41,7 @@ namespace MapReadingApplication
                 structPtr->IntField = structPtr->IntField + 1;
                 structPtr->CharField = 'A';
                 structPtr->FloatArrayField[0] = 200;
+                structPtr->FloatArrayField[1] = 306;
                 structPtr->FloatArrayField[2] = 202;
 
                 Console.WriteLine($"P2 Values changed. P1 can read values now");

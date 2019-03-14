@@ -34,7 +34,7 @@ namespace MapCreatingApplication
 
                 Console.WriteLine($"P1 written to memory.");
                 Console.WriteLine($"P2 can read and edit now!");
-                Console.WriteLine("Press 'c' when done...");
+                Console.WriteLine("P1 Press 'c' when done...");
 
                 char c;
                 do

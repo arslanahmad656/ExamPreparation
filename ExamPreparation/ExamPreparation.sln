@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		70-483 Programming in C#.pdf = 70-483 Programming in C#.pdf
 		Albahari J., Albahari B. - C# 7.0 in a Nutshell, 7th Edition - 2018.pdf = Albahari J., Albahari B. - C# 7.0 in a Nutshell, 7th Edition - 2018.pdf
 		Full Book - 2nd Edition - Exam Ref 70-483 Programming in C#, Wouter de Kort, O´Reilly, 2018 - 2nd Edition.pdf = Full Book - 2nd Edition - Exam Ref 70-483 Programming in C#, Wouter de Kort, O´Reilly, 2018 - 2nd Edition.pdf
+		TODO.txt = TODO.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{4BFF74F6-8BBF-47B3-93E9-5D3B9B5A92C7}"

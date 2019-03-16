@@ -48,6 +48,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapReadingApplication", "Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMComponent", "COMComponent\COMComponent.csproj", "{7747A17D-0764-4D8D-8168-4B782FD2F905}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project7", "Project7\Project7.csproj", "{68A4CB76-3EB8-4775-AF89-7464557200AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -126,6 +128,10 @@ Global
 		{7747A17D-0764-4D8D-8168-4B782FD2F905}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7747A17D-0764-4D8D-8168-4B782FD2F905}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7747A17D-0764-4D8D-8168-4B782FD2F905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A4CB76-3EB8-4775-AF89-7464557200AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A4CB76-3EB8-4775-AF89-7464557200AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A4CB76-3EB8-4775-AF89-7464557200AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A4CB76-3EB8-4775-AF89-7464557200AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,7 +11,8 @@ namespace Project6
         unsafe static void Main(string[] args)
         {
             //UnsafeBasics.Example1.Run();
-            MappingUnsafeStructs.Example.Run();
+            //MappingUnsafeStructs.Example.Run();
+            COM.Example1.Run();
         }
     }
 }

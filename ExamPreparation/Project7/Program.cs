@@ -10,6 +10,7 @@ namespace Project7
     {
         static void Main(string[] args)
         {
+            CodeDomBasics.GeneratingCodeBasics.Run();
         }
     }
 }

@@ -1,3 +1,5 @@
 ﻿ - Examples for In and Out marshalling
 
- - Office COM examples from home pc where Excel is installed (p981 of c-7-nutshell)
+ -- Office COM examples from home pc where Excel is installed (p981 of c-7-nutshell)
+
+ - String format specifiers

@@ -11,7 +11,8 @@ namespace Project7
         static void Main(string[] args)
         {
             //CodeDomBasics.GeneratingCodeBasics.Run();
-            ExpressionTrees.GeneratingExpressionTrees.Run();
+            //ExpressionTrees.GeneratingExpressionTrees.Run();
+            StringFormatting.FormattingExample.Run();
         }
     }
 }

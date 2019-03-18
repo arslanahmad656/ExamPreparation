@@ -12,7 +12,8 @@ namespace Project7
         {
             //CodeDomBasics.GeneratingCodeBasics.Run();
             //ExpressionTrees.GeneratingExpressionTrees.Run();
-            StringFormatting.FormattingExample.Run();
+            //StringFormatting.FormattingExample.Run();
+            CodeDomBasics.CloningMethodUsingCDOM.Run();
         }
     }
 }

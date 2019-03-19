@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.12
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project1", "Project1\Project1.csproj", "{ABADA46C-F1C6-40A1-AA3C-50C6E643FE11}"
 EndProject
@@ -49,6 +49,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMComponent", "COMComponent\COMComponent.csproj", "{7747A17D-0764-4D8D-8168-4B782FD2F905}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project7", "Project7\Project7.csproj", "{68A4CB76-3EB8-4775-AF89-7464557200AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedProject", "SharedProject\SharedProject.csproj", "{3AAEACAC-F0A7-4FA1-A4F3-B708EABECEBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -132,6 +134,10 @@ Global
 		{68A4CB76-3EB8-4775-AF89-7464557200AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68A4CB76-3EB8-4775-AF89-7464557200AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68A4CB76-3EB8-4775-AF89-7464557200AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AAEACAC-F0A7-4FA1-A4F3-B708EABECEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AAEACAC-F0A7-4FA1-A4F3-B708EABECEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AAEACAC-F0A7-4FA1-A4F3-B708EABECEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AAEACAC-F0A7-4FA1-A4F3-B708EABECEBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -12,6 +12,8 @@ namespace Project8.Common
 
         public int Age { get; set; }
 
+        public List<string> PhoneNumbers;
+
         public Person(string name, int age)
         {
             Name = name ?? throw new ArgumentNullException(nameof(name));

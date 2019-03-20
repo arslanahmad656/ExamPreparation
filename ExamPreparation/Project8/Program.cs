@@ -10,6 +10,8 @@ namespace Project8
     {
         static void Main(string[] args)
         {
+            //BasicExamples.JsonSerialization.Run();
+            BasicExamples.XmlSerialization.Run();
         }
     }
 }

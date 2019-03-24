@@ -14,7 +14,8 @@ namespace Project8
             //BasicExamples.XmlSerialization.Run();
             //Encryption.BasicEncryptionDecryption.Run();
             //Encryption.Example2.Run();
-            Encryption.Example3.Run();
+            //Encryption.Example3.Run();
+            Encryption.AsymmetricExample1.Run();
         }
     }
 }

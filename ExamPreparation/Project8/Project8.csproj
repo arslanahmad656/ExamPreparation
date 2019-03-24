@@ -49,6 +49,7 @@
     <Compile Include="BasicExamples\XmlSerialization.cs" />
     <Compile Include="Common\Person.cs" />
     <Compile Include="BasicExamples\JsonSerialization.cs" />
+    <Compile Include="Encryption\AsymmetricExample1.cs" />
     <Compile Include="Encryption\BasicEncryptionDecryption.cs" />
     <Compile Include="Encryption\Example2.cs" />
     <Compile Include="Encryption\Example3.cs" />
@@ -63,6 +64,9 @@
     <Content Include="bin\Debug\Newtonsoft.Json.pdb" />
     <Content Include="bin\Debug\Newtonsoft.Json.xml" />
     <Content Include="Encryption\plaintext.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Encryption\plaintextsm.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

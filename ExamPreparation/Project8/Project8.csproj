@@ -49,6 +49,9 @@
     <Compile Include="BasicExamples\XmlSerialization.cs" />
     <Compile Include="Common\Person.cs" />
     <Compile Include="BasicExamples\JsonSerialization.cs" />
+    <Compile Include="Encryption\BasicEncryptionDecryption.cs" />
+    <Compile Include="Encryption\Example2.cs" />
+    <Compile Include="Encryption\Example3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -59,6 +62,9 @@
     <Content Include="bin\Debug\Newtonsoft.Json.dll" />
     <Content Include="bin\Debug\Newtonsoft.Json.pdb" />
     <Content Include="bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="Encryption\plaintext.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

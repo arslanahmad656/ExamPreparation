@@ -11,7 +11,10 @@ namespace Project8
         static void Main(string[] args)
         {
             //BasicExamples.JsonSerialization.Run();
-            BasicExamples.XmlSerialization.Run();
+            //BasicExamples.XmlSerialization.Run();
+            //Encryption.BasicEncryptionDecryption.Run();
+            //Encryption.Example2.Run();
+            Encryption.Example3.Run();
         }
     }
 }

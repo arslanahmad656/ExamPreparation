@@ -1,0 +1,12 @@
+﻿This is a test file created to demonstrated the encryption.
+This file contains some text spanning multiple lines.
+
+
+
+There is a multiline space in the file...and some trailing empty lines
+
+
+
+
+
+

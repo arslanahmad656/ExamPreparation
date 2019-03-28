@@ -53,6 +53,7 @@
     <Compile Include="Encryption\BasicEncryptionDecryption.cs" />
     <Compile Include="Encryption\Example2.cs" />
     <Compile Include="Encryption\Example3.cs" />
+    <Compile Include="Encryption\KeyStorage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

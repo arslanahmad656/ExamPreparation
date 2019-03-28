@@ -15,7 +15,8 @@ namespace Project8
             //Encryption.BasicEncryptionDecryption.Run();
             //Encryption.Example2.Run();
             //Encryption.Example3.Run();
-            Encryption.AsymmetricExample1.Run();
+            //Encryption.AsymmetricExample1.Run();
+            Encryption.KeyStorage.Run();
         }
     }
 }

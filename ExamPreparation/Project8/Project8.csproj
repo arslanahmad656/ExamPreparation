@@ -54,11 +54,15 @@
     <Compile Include="Encryption\Example2.cs" />
     <Compile Include="Encryption\Example3.cs" />
     <Compile Include="Encryption\KeyStorage.cs" />
+    <Compile Include="Encryption\SigningWithCertificates.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="cert483.cer">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\Newtonsoft.Json.dll" />

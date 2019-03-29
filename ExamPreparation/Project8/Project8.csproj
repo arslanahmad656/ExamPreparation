@@ -49,6 +49,7 @@
     <Compile Include="BasicExamples\XmlSerialization.cs" />
     <Compile Include="Common\Person.cs" />
     <Compile Include="BasicExamples\JsonSerialization.cs" />
+    <Compile Include="Diags\TracingExample.cs" />
     <Compile Include="Encryption\AsymmetricExample1.cs" />
     <Compile Include="Encryption\BasicEncryptionDecryption.cs" />
     <Compile Include="Encryption\Example2.cs" />

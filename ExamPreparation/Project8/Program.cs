@@ -19,7 +19,8 @@ namespace Project8
             //Encryption.KeyStorage.Run();
             //Encryption.SigningWithCertificates.Run();
             //Diags.TracingExample.Run();
-            Diags.DebuggingAndTracingPractice.Run();
+            //Diags.DebuggingAndTracingPractice.Run();
+            Diags.StopWatch.Run();
         }
     }
 }

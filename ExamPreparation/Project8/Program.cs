@@ -20,7 +20,8 @@ namespace Project8
             //Encryption.SigningWithCertificates.Run();
             //Diags.TracingExample.Run();
             //Diags.DebuggingAndTracingPractice.Run();
-            Diags.StopWatch.Run();
+            //Diags.StopWatch.Run();
+            Diags.ReadingPerformanceCounters.Run();
         }
     }
 }

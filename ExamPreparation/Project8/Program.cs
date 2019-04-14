@@ -18,7 +18,8 @@ namespace Project8
             //Encryption.AsymmetricExample1.Run();
             //Encryption.KeyStorage.Run();
             //Encryption.SigningWithCertificates.Run();
-            Diags.TracingExample.Run();
+            //Diags.TracingExample.Run();
+            Diags.DebuggingAndTracingPractice.Run();
         }
     }
 }

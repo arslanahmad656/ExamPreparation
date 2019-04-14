@@ -72,5 +72,8 @@
     <Content Include="Data\Binaries\Newtonsoft.Json\portable-net45+win8+wpa81+wp8\Newtonsoft.Json.pdb" />
     <Content Include="Data\Binaries\Newtonsoft.Json\portable-net45+win8+wpa81+wp8\Newtonsoft.Json.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\cert483.cer" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

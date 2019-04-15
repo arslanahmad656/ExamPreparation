@@ -18,9 +18,10 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,6 +50,9 @@
     <Compile Include="BasicExamples\XmlSerialization.cs" />
     <Compile Include="Common\Person.cs" />
     <Compile Include="BasicExamples\JsonSerialization.cs" />
+    <Compile Include="Diags\DebuggingAndTracingPractice.cs" />
+    <Compile Include="Diags\ReadingPerformanceCounters.cs" />
+    <Compile Include="Diags\StopWatch.cs" />
     <Compile Include="Diags\TracingExample.cs" />
     <Compile Include="Encryption\AsymmetricExample1.cs" />
     <Compile Include="Encryption\BasicEncryptionDecryption.cs" />

@@ -21,7 +21,8 @@ namespace Project8
             //Diags.TracingExample.Run();
             //Diags.DebuggingAndTracingPractice.Run();
             //Diags.StopWatch.Run();
-            Diags.ReadingPerformanceCounters.Run();
+            //Diags.ReadingPerformanceCounters.Run();
+            Diags.CreatingPerformanceCounters.Run();
         }
     }
 }

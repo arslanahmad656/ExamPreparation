@@ -16,7 +16,8 @@ namespace Project8.Diags
         {
             //Demo1();
             //Demo2();
-            DemoTraceSource();
+            //DemoTraceSource();
+            DemoTraceSwitch();
         }
 
         static void Demo2()
@@ -44,13 +45,27 @@ namespace Project8.Diags
         static void DemoTraceSource()
         {
             var ts = new TraceSource("Learning Trace Source", SourceLevels.All);
+            ts.Listeners.Add(new TextWriterTraceListener(File.Create("TraceSource1.log")));
             ts.TraceEvent(TraceEventType.Information, 11, "Hello");
             ts.TraceEvent(TraceEventType.Critical, 12, "My message");
             ts.TraceInformation("An informative message");
             ts.TraceData(TraceEventType.Error, 44, new Exception("Sample exception"));
-            ts.Listeners.Add(new TextWriterTraceListener(File.Create("TraceSource1.log")));
             ts.Flush();
             ts.Close();
+        }
+
+        static void DemoTraceSwitch()
+        {
+            Trace.Listeners.Add(new TextWriterTraceListener(File.Create("TraceSource2.log")));
+            var traceSwitch = new TraceSwitch("My Trace Switch", "This is a test trace switch")
+            {
+                Level = TraceLevel.Warning
+            };
+
+            Trace.WriteLineIf(traceSwitch.TraceError, "Error is being traced");
+            Trace.WriteLineIf(traceSwitch.TraceVerbose, "Verbose is being traced");
+            Trace.Flush();
+            Trace.Close();
         }
     }
 }

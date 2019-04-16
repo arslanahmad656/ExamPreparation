@@ -52,8 +52,11 @@
     <Compile Include="BasicExamples\XmlSerialization.cs" />
     <Compile Include="Common\Person.cs" />
     <Compile Include="BasicExamples\JsonSerialization.cs" />
+    <Compile Include="Diags\CounterAgain.cs" />
     <Compile Include="Diags\CreatingPerformanceCounters.cs" />
+    <Compile Include="Diags\CreatingPerformanceCountersCopied.cs" />
     <Compile Include="Diags\DebuggingAndTracingPractice.cs" />
+    <Compile Include="Diags\ReadingImagesCounter.cs" />
     <Compile Include="Diags\ReadingPerformanceCounters.cs" />
     <Compile Include="Diags\StopWatch.cs" />
     <Compile Include="Diags\TracingExample.cs" />

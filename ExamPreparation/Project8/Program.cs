@@ -22,7 +22,10 @@ namespace Project8
             //Diags.DebuggingAndTracingPractice.Run();
             //Diags.StopWatch.Run();
             //Diags.ReadingPerformanceCounters.Run();
-            Diags.CreatingPerformanceCounters.Run();
+            //Diags.CreatingPerformanceCounters.Run();
+            //Diags.ReadingImagesCounter.Run();
+            //Diags.CreatingPerformanceCountersCopied.Run();
+            Diags.CounterAgain.Run();
         }
     }
 }

@@ -11,12 +11,12 @@ namespace Project8.Diags
 {
     static class CreatingPerformanceCounters
     {
-        const string counterCategoryName = "My Images Processed Counter";
-        const string totalImagesCounterName = "Total Images Processed";
-        const string imagesProcessedPerSecondCounterName = "Images Processed Per Second";
-        const string totalImagesCounterHelp = "Represents the total number of images that have been processed since the creation of counter.";
-        const string imagesProcessedPerSecondCounterHelp = "Represents the average number of images processed per second.";
-        const string counterCategoryHelp = "Image processing counter describing the total number images that have been processed and the average" +
+        public const string counterCategoryName = "My Images Processed Counter";
+        public const string totalImagesCounterName = "My Total Images Processed";
+        public const string imagesProcessedPerSecondCounterName = "My Images Processed Per Second";
+        public const string totalImagesCounterHelp = "Represents the total number of images that have been processed since the creation of counter.";
+        public const string imagesProcessedPerSecondCounterHelp = "Represents the average number of images processed per second.";
+        public const string counterCategoryHelp = "Image processing counter describing the total number images that have been processed and the average" +
             " number of images processed per second.";
 
         static PerformanceCounter TotalImagesCounter;
@@ -47,7 +47,7 @@ namespace Project8.Diags
             Console.ReadKey();
         }
 
-        static CounterSetupResult SetupCounters()
+        public static CounterSetupResult SetupCounters()
         {
             if (PerformanceCounterCategory.Exists(counterCategoryName))
             {
@@ -57,7 +57,7 @@ namespace Project8.Diags
                     readOnly: false);
                 ImagesProcessPerSecondCounter = new PerformanceCounter(
                     categoryName: counterCategoryName,
-                    counterName: totalImagesCounterName,
+                    counterName: imagesProcessedPerSecondCounterName,
                     readOnly: false);
                 return CounterSetupResult.Loaded;
             }
@@ -84,19 +84,19 @@ namespace Project8.Diags
 
             ImagesProcessPerSecondCounter.Increment();
 
-            String filename = Path.GetFileName(sourceFile);
+            //String filename = Path.GetFileName(sourceFile);
 
-            String destPath = Path.Combine(destDir, filename);
+            //String destPath = Path.Combine(destDir, filename);
 
-            Bitmap bitmap = new Bitmap(sourceFile);
+            //Bitmap bitmap = new Bitmap(sourceFile);
 
-            float scale = Math.Min((float)width / bitmap.Width, (float)height / bitmap.Height);
+            //float scale = Math.Min((float)width / bitmap.Width, (float)height / bitmap.Height);
 
-            int scaleWidth = (int)(bitmap.Width * scale);
-            int scaleHeight = (int)(bitmap.Height * scale);
+            //int scaleWidth = (int)(bitmap.Width * scale);
+            //int scaleHeight = (int)(bitmap.Height * scale);
 
-            Bitmap resized = new Bitmap(bitmap, new Size(scaleWidth, scaleHeight));
-            resized.Save(destPath);
+            //Bitmap resized = new Bitmap(bitmap, new Size(scaleWidth, scaleHeight));
+            //resized.Save(destPath);
         }
 
         static void MakeThumbnailsSeq(string sourceDir, string destDir, int width = 320, int height = 240)
@@ -123,13 +123,13 @@ namespace Project8.Diags
             });
         }
 
-        static void SequentialTest()
+        public static void SequentialTest()
         {
             MakeThumbnailsSeq(sourceDir: @"..\..\..\images",
                 destDir: @"Images\Serial"); ;
         }
 
-        static void ParallelTest()
+        public static void ParallelTest()
         {
             MakeThumbnailsParallel(sourceDir: @"..\..\..\images",
                 destDir: @"Images\Parallel");

@@ -25,7 +25,8 @@ namespace Project8
             //Diags.CreatingPerformanceCounters.Run();
             //Diags.ReadingImagesCounter.Run();
             //Diags.CreatingPerformanceCountersCopied.Run();
-            Diags.CounterAgain.Run();
+            //Diags.CounterAgain.Run(); // successful attempt
+            Diags.EventLogging.Run();
         }
     }
 }

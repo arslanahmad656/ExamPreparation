@@ -30,7 +30,8 @@ namespace Project8
             //DataAccess.InteractingWithWeb.Run();
             //Serializtion.BinarySerialization.Run();
             //DataAccess.InteractingWithWebApi.Run();
-            Serializtion.XmlSerialization.Run();
+            //Serializtion.XmlSerialization.Run();
+            Serializtion.JsonSerialization.Run();
         }
     }
 }

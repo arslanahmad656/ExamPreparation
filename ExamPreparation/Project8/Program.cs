@@ -28,7 +28,8 @@ namespace Project8
             //Diags.CounterAgain.Run(); // successful attempt
             //Diags.EventLogging.Run();
             //DataAccess.InteractingWithWeb.Run();
-            Serializtion.BinarySerialization.Run();
+            //Serializtion.BinarySerialization.Run();
+            DataAccess.InteractingWithWebApi.Run();
         }
     }
 }

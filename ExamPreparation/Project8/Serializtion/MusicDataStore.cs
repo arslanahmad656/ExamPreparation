@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using System.Xml.Serialization;
 
 namespace Project8.Serializtion
 {
     [Serializable]
-    class MusicDataStore
+    public class MusicDataStore
     {
-        private List<Artist> artists = new List<Artist>();
-        private List<MusicTrack> tracks = new List<MusicTrack>();
+        public List<Artist> artists = new List<Artist>();
+        public List<MusicTrack> tracks = new List<MusicTrack>();
 
         public static MusicDataStore MusicStore => new MusicDataStore();
 

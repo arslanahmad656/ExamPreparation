@@ -76,6 +76,7 @@
     <Compile Include="Serializtion\BinarySerialization.cs" />
     <Compile Include="Serializtion\MusicDataStore.cs" />
     <Compile Include="Serializtion\MusicTrack.cs" />
+    <Compile Include="Serializtion\XmlSerialization.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

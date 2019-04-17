@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Project8.Serializtion
 {
     [Serializable]
-    class MusicTrack
+    public class MusicTrack
     {
         public Artist Artist { get; set; }
         public string Title { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Security;
+using System.Security.Cryptography;
 
 namespace Project8.Serializtion
 {
@@ -21,7 +21,68 @@ namespace Project8.Serializtion
 
         public static void Run()
         {
-            DemoSimpleSerialization();
+            //DemoSimpleSerialization();
+            DemoEncryptedSerialization();
+        }
+
+        static void DemoEncryptedSerialization()
+        {
+            var fileName = "serialize2.bin";
+            byte[] key;
+            byte[] iv;
+
+            Serialize();
+            Deserialize();
+
+            void Serialize()
+            {
+                Console.WriteLine("Store to serialize: ");
+                Console.WriteLine(store);
+
+                using (var fs = new FileStream(fileName, FileMode.Create, FileAccess.Write))
+                {
+                    using (Aes aes = Aes.Create())
+                    {
+                        key = aes.Key;
+                        iv = aes.IV;
+
+                        ICryptoTransform encryptor = aes.CreateEncryptor();
+
+                        using (var cs = new CryptoStream(fs, encryptor, CryptoStreamMode.Write))
+                        {
+                            var serializer = new BinaryFormatter();
+                            serializer.Serialize(cs, store);
+                            cs.Flush();
+                        }
+                    }
+                }
+
+                Console.WriteLine($"MusicStore object has been serialized to {Path.GetFullPath(fileName)}");
+            }
+
+            void Deserialize()
+            {
+                MusicDataStore deserializedObject;
+                using (var fs = new FileStream(fileName, FileMode.Open, FileAccess.Read))
+                {
+                    using (Aes aes = Aes.Create())
+                    {
+                        aes.Key = key;
+                        aes.IV = iv;
+
+                        ICryptoTransform decryptor = aes.CreateDecryptor();
+
+                        using (var cs = new CryptoStream(fs, decryptor, CryptoStreamMode.Read))
+                        {
+                            var deserializer = new BinaryFormatter();
+                            deserializedObject = (MusicDataStore)deserializer.Deserialize(cs);
+                        }
+                    }
+                }
+
+                Console.WriteLine("Deserialized object:");
+                Console.WriteLine(deserializedObject);
+            }
         }
 
         static void DemoSimpleSerialization()

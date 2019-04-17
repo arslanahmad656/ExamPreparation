@@ -92,7 +92,7 @@ namespace Project8.DataAccess
                 {
                     Text = "Sending from C#"
                 };
-                var serialized = JsonConvert.SerializeObject(json);
+                var serialized = JsonConvert.SerializeObject(json); // using Newtonsoft.Json
 
                 var client = new HttpClient();
                 var content = new StringContent(serialized, Encoding.UTF8, "application/json");

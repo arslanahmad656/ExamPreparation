@@ -70,6 +70,10 @@
     <Compile Include="Encryption\SigningWithCertificates.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serializtion\Artist.cs" />
+    <Compile Include="Serializtion\BinarySerialization.cs" />
+    <Compile Include="Serializtion\MusicDataStore.cs" />
+    <Compile Include="Serializtion\MusicTrack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

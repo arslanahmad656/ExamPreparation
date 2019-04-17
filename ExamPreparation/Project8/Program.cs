@@ -27,7 +27,8 @@ namespace Project8
             //Diags.CreatingPerformanceCountersCopied.Run();
             //Diags.CounterAgain.Run(); // successful attempt
             //Diags.EventLogging.Run();
-            DataAccess.InteractingWithWeb.Run();
+            //DataAccess.InteractingWithWeb.Run();
+            Serializtion.BinarySerialization.Run();
         }
     }
 }

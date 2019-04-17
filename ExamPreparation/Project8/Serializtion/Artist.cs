@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project8.Serializtion
 {
+    [Serializable]
     class Artist
     {
         public string Name { get; set; }

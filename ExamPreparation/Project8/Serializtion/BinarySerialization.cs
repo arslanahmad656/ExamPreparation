@@ -4,14 +4,62 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Security;
 
 namespace Project8.Serializtion
 {
     static class BinarySerialization
     {
+        static readonly MusicDataStore store;
+
+        static BinarySerialization()
+        {
+            store = MusicDataStore.MusicStore;
+        }
+
         public static void Run()
         {
-            var store = GetMusicStore();
+            DemoSimpleSerialization();
+        }
+
+        static void DemoSimpleSerialization()
+        {
+            var fileName = "serialize1.bin";
+            Serialize();
+            Deserialize();
+
+            void Serialize()
+            {
+                Console.WriteLine("Music store to serialize: ");
+                Console.WriteLine(store);
+
+                using (var fs = new FileStream(fileName, FileMode.Create, FileAccess.Write))
+                {
+                    var serializer = new BinaryFormatter();
+                    serializer.Serialize(fs, store);
+                    fs.Flush();
+                }
+
+                Console.WriteLine();
+                Console.WriteLine($"Music store has been serialized to {Path.GetFullPath(fileName)}");
+            }
+
+            void Deserialize()
+            {
+                Console.WriteLine("Derializing");
+                MusicDataStore deserializedStore;
+                using (var fs = new FileStream(fileName, FileMode.Open, FileAccess.Read))
+                {
+                    var deserializer = new BinaryFormatter();
+                    deserializedStore = (MusicDataStore)deserializer.Deserialize(fs);
+                }
+
+                Console.WriteLine("Deserialized:");
+                Console.WriteLine(deserializedStore);
+                Console.WriteLine($"{nameof(store)} == {nameof(deserializedStore)}: {ReferenceEquals(store, deserializedStore)}");
+            }
         }
 
         static MusicDataStore GetMusicStore()

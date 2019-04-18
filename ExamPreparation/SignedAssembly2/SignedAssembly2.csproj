@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{162F8A2D-A02A-469A-B9A7-720BE5F2BA6B}</ProjectGuid>
+    <ProjectGuid>{61C1680D-9B10-4655-BA34-5F3474890960}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SignedAssembly</RootNamespace>
+    <RootNamespace>SignedAssembly2</RootNamespace>
     <AssemblyName>SignedAssembly</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -33,7 +33,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>key483-1.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>key483-2.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project9
+namespace SignedAssembly2
 {
-    class Program
+    public class Class1
     {
-        static void Main(string[] args)
-        {
-            Folder1.Class2.Run();
-        }
     }
 }

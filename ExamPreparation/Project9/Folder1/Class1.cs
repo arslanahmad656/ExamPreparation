@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Security.Cryptography;
 using System.IO;
 using System.Threading;
+using System.Reflection;
 
 namespace Project9.Folder1
 {
@@ -15,7 +16,18 @@ namespace Project9.Folder1
         {
             //DemoHashing();
             //RunningTotalQuestion();
-            TaskStatusCancelled();
+            //TaskStatusCancelled();
+            LoadAssemblyTest();
+        }
+
+        static void LoadAssemblyTest()
+        {
+            File.Copy(
+                sourceFileName: @"..\..\SignedAssembly.dll",
+                destFileName: "SignedAssembly.dll",
+                overwrite: true);
+            var assemblyName = "SignedAssembly, Version=2.1.0.9, Culture=neutral, PublicKeyToken=1f59f2ea13bb832a";
+            var ass = Assembly.Load(assemblyName);
         }
 
         static void TaskStatusCancelled()

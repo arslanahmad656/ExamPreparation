@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project9
+namespace SignedAssembly
 {
-    class Program
+    public static class Class1
     {
-        static void Main(string[] args)
+        public static void Hello()
         {
-            Folder1.Class1.Run();
+            Console.WriteLine("Hello World!");
         }
     }
 }

@@ -1,0 +1,96 @@
+﻿ - Literal characters in Regular expressions (12):
+		(	)
+		{	}
+		[	]
+		\
+		+
+		^
+		|
+		.
+		*
+
+ - Character classes: Match exactly one out of the several characters.
+	- Long hand character classes: those specified in []
+		- gr[ae]y matches gray or grey but not graey or greay
+		- [0-9]	matches a single digit
+		- Ranges can be combined: [0-9a-fA-F] matches a single case-insensitive hexadecimal digit
+		- Ranges can be combined with single characters: [0-9a-fxA-Fx] matches a single case-insensitive hexadecimal digit or case-insensitive letter x
+	- Short hand character classes: these are special character classes, and these start with \
+		- \d matches a single digit
+		- \w matches a word character (alpha-numeric characters and underscores)
+		- \s matches whitespaces (spaces, tabs, vertical tabs, line feeds, carriage return etc.)
+	- Negating character with caret symbol: ^
+		- ^ right after the opening [ brace negates the meaning:
+			- gr[^ae]y matches all but gray and grey
+			- q[^x] matches question and qatar but not iraq (since there is no character after last q in iraq to match with)
+	- Special character classes:	(special characters not available to type from keyboard)
+		- can be specified with their well known escape sequences like \n, \r, \t, \b, \v etc.
+		- can be speicied using unicode form e.g. \u20AC or \x{20AC}
+		- can be specified using hexadecimal index: \xA9
+
+- Matching any character using .:
+	- . matches any character (usually except line-break charactes)
+		- gr.y matches gray, grey, groy
+		- .r.y matches troy, gray, grey
+
+- Matching at a position (anchoring):
+	- These literals match not the specific character but at a specific character a specific position
+		- Anchor literals: ^, $, \b, \B
+		- ^: matches the first occurence of a character at start
+			- ^b matches the first b but not the last b in bob
+		- $: matches the last occurence of a character (the first occurrence from the end)
+			- $b matches the last b but not the first b in bob
+		- \b: matches at the word boundary
+		- \B: matches at any position where \b cannot
+			- word boundary: a position between where \w can match and where \w cannot
+
+- Grouping:
+		- A pair of paranthesis creates a group
+		- (dog) has one group
+		- (cat)(dog) has two groups
+
+- Alternation: Matches one of other sperated by |
+		- cat|dog matches cat and dog in 'about cats and dogs'
+		- | has the lowest precedence among the literals:
+			- 'cat|dog food' matches 'cat' or 'dog food' but not 'cat food'
+			- Use Grouping to change the precedence order:
+				'(cat|dog) food' matches 'cat food' or 'dog food'
+
+ - Quantification (Repetition)
+		- Repeatition literals: ?, *, +
+		- ? matches 0 or 1 time: it essentially makes the character preceding ? optional
+		- * matches 0 or more times
+		- + matches 1 or more times
+		- Count of repeatition can be set in {} like {lowerCount, upperCount}
+		- Examples:
+			- colou?r matches color and colour
+			- matching a valid HTML tag: <[a-zA-Z][a-zA-Z0-9]*>
+				<[a-zA-Z0-9]+> can match invalid html tags like <1>
+			- matching numbers between 1000 and 9999: \b[1-9][0-9]{3}\b
+			- matching numbers between 100 and 99999: \b[1-9][0-9]{2,4}\b
+
+- Backreferences
+		- Refering to same text as matched in a group corresponding to a particular numbered or named position
+		- Examples:
+			- ([xyz]) = \1 matches x = x, y = y or z = z and nothing else
+			- (?<variableGroup>[xyz]) = \k<variableGroup> is identical to above mentioned regexp
+
+ - Lookarounds: matching regular expressions on the basis of tokens after or before a token
+ - Types of look arounds:
+	- Look ahead positive: (?=)
+		- A(?=B) finds A which has B after A
+			- q(?=u) matches 'question' since 'question' has a 'q' which has a 'u' after 'q'
+			- q(?=u) does not matches 'iraq' since 'iraq' does not have a 'q' which has a 'u' after 'q'
+	- Look ahead negative: (?!)
+		- A(?!B) finds A which does not have a B after A
+			- q(?!u) matches q in 'iraq' since 'iraq' has a 'q' which does not have a 'u' after 'q'
+			- q(?!u) does not match question since 'question' does not have any 'q' which does not have a 'u' after 'q'
+	- Look behind positive: (?<=)
+		- (?<=A)B finds B which has an 'A' before 'B'
+			- (?<=a)b matches b in abc since abc has an a before b
+	- Look behind negative (?<!)
+		- (?<!A)B finds B which does not have an A before B
+
+
+
+References: https://www.regular-expressions.info/quickstart.html

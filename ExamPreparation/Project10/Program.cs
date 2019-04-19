@@ -10,6 +10,7 @@ namespace Project10
     {
         static void Main(string[] args)
         {
+            Basics.Basics.Run();
         }
     }
 }

@@ -66,6 +66,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignedAssembly", "SignedAss
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignedAssembly2", "SignedAssembly2\SignedAssembly2.csproj", "{61C1680D-9B10-4655-BA34-5F3474890960}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project10", "Project10\Project10.csproj", "{43AEC027-84CD-4C9A-9003-D0448DA6BC67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -168,6 +170,10 @@ Global
 		{61C1680D-9B10-4655-BA34-5F3474890960}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61C1680D-9B10-4655-BA34-5F3474890960}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61C1680D-9B10-4655-BA34-5F3474890960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43AEC027-84CD-4C9A-9003-D0448DA6BC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43AEC027-84CD-4C9A-9003-D0448DA6BC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43AEC027-84CD-4C9A-9003-D0448DA6BC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43AEC027-84CD-4C9A-9003-D0448DA6BC67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,7 +11,8 @@ namespace Project10
         static void Main(string[] args)
         {
             //Basics.Basics.Run();
-            Basics.Fundamentals.Run();
+            //Basics.Fundamentals.Run();
+            Basics.Options.Run();
         }
     }
 }

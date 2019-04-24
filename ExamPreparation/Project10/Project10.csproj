@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Basics\Anchors.cs" />
     <Compile Include="Basics\Basics.cs" />
     <Compile Include="Basics\Fundamentals.cs" />
     <Compile Include="Basics\Options.cs" />

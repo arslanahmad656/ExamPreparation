@@ -46,6 +46,7 @@
     <Compile Include="Basics\Basics.cs" />
     <Compile Include="Basics\Fundamentals.cs" />
     <Compile Include="Basics\Groups.cs" />
+    <Compile Include="Basics\Operations.cs" />
     <Compile Include="Basics\Options.cs" />
     <Compile Include="Basics\Quantifiers.cs" />
     <Compile Include="Basics\Words.cs" />

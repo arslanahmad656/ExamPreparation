@@ -14,7 +14,8 @@ namespace Project10
             //Basics.Fundamentals.Run();
             //Basics.Options.Run();
             //Basics.Quantifiers.Run();
-            Basics.Anchors.Run();
+            //Basics.Anchors.Run();
+            Basics.Words.Run();
         }
     }
 }

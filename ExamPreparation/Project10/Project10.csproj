@@ -47,6 +47,7 @@
     <Compile Include="Basics\Fundamentals.cs" />
     <Compile Include="Basics\Options.cs" />
     <Compile Include="Basics\Quantifiers.cs" />
+    <Compile Include="Basics\Words.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

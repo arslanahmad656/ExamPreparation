@@ -10,6 +10,7 @@ namespace PracticeProject
     {
         static void Main(string[] args)
         {
+            PracticeFile.Run();
         }
     }
 }

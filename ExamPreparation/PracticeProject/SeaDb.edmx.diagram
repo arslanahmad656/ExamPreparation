@@ -35,7 +35,7 @@
         <EntityTypeShape EntityType="Model.AspNetStudentAssessment" Width="2.25" PointX="23" PointY="33.875" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.AspNetStudent" Width="1.5" PointX="15.5" PointY="32.25" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.AspNetStudentSection" Width="1.5" PointX="20.75" PointY="36.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.AspNetTeacher_Enrollments" Width="1.5" PointX="20" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetTeacher_Enrollments" Width="2.125" PointX="20" PointY="28.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.AspNetTeacher_Histories" Width="1.5" PointX="23" PointY="29.625" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.AspNetTeacher" Width="1.5" PointX="17.75" PointY="23.875" IsExpanded="true" />
         <EntityTypeShape EntityType="Model.AspNetTerm" Width="1.5" PointX="5.25" PointY="34.25" IsExpanded="true" />

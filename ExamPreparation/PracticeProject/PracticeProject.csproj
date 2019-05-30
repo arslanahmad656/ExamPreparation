@@ -200,6 +200,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SeaDb.edmx</DependentUpon>
     </Compile>
+    <Compile Include="XmlPracticeFile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

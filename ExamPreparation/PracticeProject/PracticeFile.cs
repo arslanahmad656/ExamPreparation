@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace PracticeProject
 {
@@ -13,7 +14,22 @@ namespace PracticeProject
             //TestGenericType();
             //CalculateRunningTotal();
             //CheckDoubleIndeterminate();
-            FormatPractice();
+            //FormatPractice();
+            CheckReg();
+        }
+
+        static void CheckReg()
+        {
+            var pattern = "search";
+            var text = "i can perform search by using a search function that performs a search operation and then return the search result.";
+            MatchCollection matches = Regex.Matches(text, pattern);
+            List<string> result = new List<string>();
+            var enumerator = matches.GetEnumerator();
+            while (enumerator.MoveNext())
+            {
+                result.Add(((Match)enumerator.Current).Value);
+            }
+            Console.WriteLine(result.Count);
         }
 
         static void FormatPractice()

@@ -10,8 +10,8 @@ namespace PracticeProject
     {
         static void Main(string[] args)
         {
-            //PracticeFile.Run();
-            XmlPracticeFile.Run();
+            PracticeFile.Run();
+            //XmlPracticeFile.Run();
         }
     }
 }

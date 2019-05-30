@@ -12,7 +12,21 @@ namespace PracticeProject
         {
             //TestGenericType();
             //CalculateRunningTotal();
-            CheckDoubleIndeterminate();
+            //CheckDoubleIndeterminate();
+            FormatPractice();
+        }
+
+        static void FormatPractice()
+        {
+            for (int i = 4; i <= 40000000; i *= 10)
+            {
+                Console.WriteLine($"C2: {i,20:C2} D8: {i:D8} E3: {i:E3} F3: {i,15:F3} G3: {i,7:G3} N3: {i,20:N3} x: {i,8:x} X3: {i,8:X3}");
+            }
+
+            var n = 123.45;
+            Console.WriteLine();
+            Console.WriteLine($"0: {n:0}, 00000: {n:00000} 00000.0000 {n:00000.0000}");
+            Console.WriteLine($"#: {n:#}, #######: {n:#######}, #####.###: {n:#####.###}, #####-#######-#: {3450204400597:#####-#######-#}");
         }
 
         static void CheckDoubleIndeterminate()

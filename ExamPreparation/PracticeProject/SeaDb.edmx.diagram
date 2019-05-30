@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="786efcf44a8c4365b8518f444c69df12" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.C__MigrationHistory" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetAccountant" Width="1.5" PointX="13.25" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetAssessment" Width="1.5" PointX="7.5" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetAssessmentType" Width="1.5" PointX="5.25" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetBranch_Admins" Width="1.5" PointX="15.5" PointY="28.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetBranch_Class" Width="1.5" PointX="5.25" PointY="30.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetBranchClass_Sections" Width="1.5" PointX="12.5" PointY="35.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetBranch" Width="1.5" PointX="10.25" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetClass_Courses" Width="1.5" PointX="17.75" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetClass" Width="1.5" PointX="15.5" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetCoursePackage" Width="1.5" PointX="17.75" PointY="28.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetCours" Width="1.5" PointX="12.5" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetDepartment" Width="1.5" PointX="10.25" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetEmployee" Width="1.5" PointX="15.5" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetEmployeePosition" Width="1.5" PointX="13.25" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetGender" Width="1.5" PointX="13.25" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetLog" Width="1.5" PointX="10.25" PointY="34.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetNationality" Width="1.5" PointX="13.25" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetPackage" Width="1.5" PointX="15.5" PointY="37.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetParent" Width="1.5" PointX="10.25" PointY="37.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetReligion" Width="1.5" PointX="13.25" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetRole" Width="1.5" PointX="5.75" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetSection" Width="1.5" PointX="10.25" PointY="46" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetSession" Width="1.5" PointX="3" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetStatu" Width="1.5" PointX="0.75" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetStudent_Enrollments" Width="1.5" PointX="17.75" PointY="34.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetStudent_Histories" Width="1.5" PointX="20.75" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetStudentAssessment" Width="2.25" PointX="23" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetStudent" Width="1.5" PointX="15.5" PointY="32.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetStudentSection" Width="1.5" PointX="20.75" PointY="36.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetTeacher_Enrollments" Width="1.5" PointX="20" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetTeacher_Histories" Width="1.5" PointX="23" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetTeacher" Width="1.5" PointX="17.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetTerm" Width="1.5" PointX="5.25" PointY="34.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserClaim" Width="1.5" PointX="10.25" PointY="40.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserLogin" Width="1.5" PointX="10.25" PointY="43" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUser" Width="1.5" PointX="8" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetVirtualRole" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_AspNetAccountants_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetAccountants_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetAssessment_AssessmentType" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetAssessment_Term" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudentAssessments_Assessment" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetBranch_Admins_Branches" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetBranch_Admins_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetBranch_Class_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetBranch_Class_Class" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetBranch_Class_Session" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetBranchClass_Sections_BranchClass" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetBranchClass_Sections_Section" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudent_Enrollments_BranchClassSection" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudent_Histories_Section" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudentSection_BranchClassSection" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetTeacher_Enrollments_Section" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetTeacher_Histories_Section" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetBranches_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetEmployee_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudents_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetClass_Courses_Class" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetClass_Courses_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetClasses_Class" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetCoursePackages_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetCoursePackages_Package" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetCourses_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudent_Enrollments_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudent_Histories_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetTeacher_Enrollments_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetTeacher_Histories_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetDepartments_AspNetUser" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetEmployee_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetEmployee_Nationality" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetEmployee_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetEmployee_Religion" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetTeachers_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetLogs_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetParents_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudents_Parent" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetSessions_Session" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetSessions_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudent_Enrollments_Session" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudent_Histories_Session" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetTeacher_Enrollments_Session" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetTeacher_Histories_Session" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetTerms_AspNetTerms" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudentAssessments_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetUsers_ToStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudent_Enrollments_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudentAssessments_StudentEnrollment" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudent_Histories_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudents_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetStudentSection_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetTeacher_Enrollments_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetTeacher_Histories_Teachers" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetTeachers_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_AspNetVirtualRole_AspNetVirtualRole" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

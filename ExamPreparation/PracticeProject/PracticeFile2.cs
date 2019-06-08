@@ -10,7 +10,31 @@ namespace PracticeProject
     {
         public static void Run()
         {
-            DemoInheritanceHeirarchy();
+            //DemoInheritanceHeirarchy();
+            DictionaryValuesTest();
+        }
+
+        static void DictionaryValuesTest()
+        {
+            var dic = new Dictionary<string, int>
+            {
+                { "Accounting", 1 },
+                { "Marketing", 2 },
+                { "Operations", 3 }
+            };
+
+            Func<string, int, bool?> searchFunc = (searchTerm, value) =>
+            {
+                return dic.Contains(new KeyValuePair<string, int>(searchTerm, value));
+            };
+
+            var result1 = searchFunc("Finance", 0);
+            var result2 = searchFunc("Accounting", 1);
+            var result3 = searchFunc("Accounting", 2);
+
+            Console.WriteLine(result1?.ToString() ?? "NULL");
+            Console.WriteLine(result2?.ToString() ?? "NULL");
+            Console.WriteLine(result3?.ToString() ?? "NULL");
         }
 
         static void DemoInheritanceHeirarchy()

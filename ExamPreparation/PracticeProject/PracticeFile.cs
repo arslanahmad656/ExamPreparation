@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
+using System.Security.Cryptography;
+using System.Data;
 
 namespace PracticeProject
 {
@@ -15,7 +18,105 @@ namespace PracticeProject
             //CalculateRunningTotal();
             //CheckDoubleIndeterminate();
             //FormatPractice();
-            CheckReg();
+            //CheckReg();
+            //WritingToEventLog();
+            //ExceptionTest();
+            //TestAmbigious();
+            //ComputingHash();
+            //DemoDefaultValues();
+            CheckConditionalCompilation();
+        }
+
+        static void CheckConditionalCompilation()
+        {
+#if DEBUG
+            Action action = () => Console.WriteLine("Some action");
+#endif
+            action();   // cannot be compiled in Release configuration
+        }
+
+        static void DemoDefaultValues()
+        {
+            Func<DbType, object> DefaultValuesMapper = dbType =>
+            {
+                switch (dbType)
+                {
+                    case DbType.Boolean:
+                        return false;
+                    case DbType.DateTime:
+                        return DateTime.MinValue;
+                    case DbType.Decimal:
+                        return 0m;
+                    case DbType.Int32:
+                        return 0;
+                    case DbType.String:
+                        return string.Empty;
+                    default:
+                        return null;
+                }
+            };
+
+            var result1 = DefaultValuesMapper(DbType.DateTime);
+            var result2 = DefaultValuesMapper(DbType.Int64);
+            var result3 = DefaultValuesMapper(DbType.Double);
+
+            Console.WriteLine($"Datetime: " + result1);
+            Console.WriteLine($"Int64: " + result2);
+            Console.WriteLine($"Double: " + result3);
+        }
+
+        static void ComputingHash()
+        {
+            var hasher = SHA1.Create();
+            var bytes = Encoding.ASCII.GetBytes("RAVIAN656");
+            //var value1 = hasher.Hash; // NullReferenceException
+            var value2 = hasher.ComputeHash(bytes);
+            var value3 = hasher.Hash;
+
+            //Console.WriteLine("Value 1: " + value1);
+            Console.WriteLine("Value 2: " + Encoding.ASCII.GetString(value2));
+            Console.WriteLine("Value 3: " + Encoding.ASCII.GetString(value3));
+        }
+
+        static void TestAmbigious()
+        {
+            DisplayInt(10);
+        }
+
+        static void DisplayInt(int num)
+        {
+            Console.WriteLine("Non-Nullable " + num);
+        }
+
+        static void DisplayInt(int? num)
+        {
+            Console.WriteLine("Nullable " + num);
+        }
+
+        static void ExceptionTest()
+        {
+            try
+            {
+                throw new NullReferenceException();
+            }
+            catch (NullReferenceException ex)
+            {
+
+            }
+            catch (Exception ex)
+            {
+                
+            }
+        }
+
+        static void WritingToEventLog()
+        {
+            EventLog log = new EventLog
+            {
+                Source = "AppSource",
+                EnableRaisingEvents = true
+            };
+            log.WriteEntry("Some message");
         }
 
         static void CheckReg()

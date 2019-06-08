@@ -183,6 +183,7 @@
     <Compile Include="ExceptionExample.cs" />
     <Compile Include="InterfaceExamples.cs" />
     <Compile Include="PracticeFile.cs" />
+    <Compile Include="PracticeFile2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeaDb.Context.cs">

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
 
 namespace PracticeProject
 {
@@ -11,7 +12,29 @@ namespace PracticeProject
         public static void Run()
         {
             //DemoInheritanceHeirarchy();
-            DictionaryValuesTest();
+            //DictionaryValuesTest();
+            //AssemblyLoadTest();
+            FormatTest();
+        }
+
+        static void FormatTest()
+        {
+            Func<string, string, int, decimal, string> formatter = (firstName, lastName, orderNo, price) =>
+                $"Thankyou {firstName} {lastName} for order {orderNo}. Your price is {price:C2}";
+
+            var result1 = formatter("Arslan", "Ahmad", 12, 656m);
+            var result2 = formatter("Asim", "Kabir", 13, 456.6m);
+            var result3 = formatter("Usman", "Kabir", 14, 565.565m);
+
+            Console.WriteLine(result1);
+            Console.WriteLine(result2);
+            Console.WriteLine(result3);
+        }
+
+        static void AssemblyLoadTest()
+        {
+            var ass = Assembly.Load("Assembly ass1key1, Version=1.0.2.5, Culture=en-US, PublicKeyToken=199287ff83a380a2");
+            var loaded = AppDomain.CurrentDomain.GetAssemblies().Select(a => a.FullName);
         }
 
         static void DictionaryValuesTest()

@@ -222,6 +222,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>aspnet-SeaVersion_2_20170818051512.mdf</DependentUpon>
     </Content>
+    <Content Include="bin\Debug\ass1key1.dll" />
+    <Content Include="bin\Debug\ass1key2.dll" />
+    <Content Include="bin\Debug\ass2key1.dll" />
+    <Content Include="bin\Debug\ass2key2.dll" />
     <Content Include="SeaDb.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>SeaDb.Context.cs</LastGenOutput>

@@ -7,6 +7,7 @@ using System.IO;
 using System.Runtime.Serialization;
 using System.Xml;
 using System.Net;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace PracticeProject
 {
@@ -15,7 +16,57 @@ namespace PracticeProject
         public static void Run()
         {
             //CheckDataContractSerialization();
-            CheckDownloadImage();
+            //CheckDownloadImage();
+            //TestLogger();
+            SerializingTest();
+        }
+
+        static void SerializingTest()
+        {
+            Case1();
+            Case2();
+            Case3();
+
+            void Case1()
+            {
+                var obj = new Class11("Some value in Class11");
+                using (var fs = File.Create("Class11.bin"))
+                {
+                    var ser = new BinaryFormatter();
+                    ser.Serialize(fs, obj);
+                }
+            }
+
+            void Case2()
+            {
+                var obj = new Class11("Serializing using data contract serializer");
+
+                using (var fs = File.Create("Class11_1.xml"))
+                {
+                    var ser = new DataContractSerializer(typeof(Class11));
+                    ser.WriteObject(fs, obj);
+                }
+            }
+
+            void Case3()
+            {
+                var obj = new Class12();
+
+                using (var fs = File.Create("Class12.xml"))
+                {
+                    var ser = new DataContractSerializer(typeof(Class12));
+                    ser.WriteObject(fs, obj);
+                }
+            }
+        }
+
+        static void TestLogger()
+        {
+            using (LogWriter lw = new LogWriter("logfile.txt"))
+            {
+                lw.Log("new log entry");
+                lw.Dispose();
+            }
         }
 
         static void CheckDownloadImage()

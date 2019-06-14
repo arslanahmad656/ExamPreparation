@@ -182,6 +182,7 @@
     </Compile>
     <Compile Include="ExceptionExample.cs" />
     <Compile Include="InterfaceExamples.cs" />
+    <Compile Include="LogWriter.cs" />
     <Compile Include="PracticeFile.cs" />
     <Compile Include="PracticeFile2.cs" />
     <Compile Include="PracticeFile3.cs" />
@@ -202,6 +203,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SeaDb.edmx</DependentUpon>
     </Compile>
+    <Compile Include="SerializableClasses.cs" />
     <Compile Include="XmlPracticeFile.cs" />
   </ItemGroup>
   <ItemGroup>
